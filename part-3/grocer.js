@@ -43,18 +43,19 @@
   }
 
   Cart.prototype.cartHandler = function() {
-    var cart = document.querySelector('.maskoff')
+    var cart = document.querySelector('.modal')
+    console.log(cart)
     cart.style.display = cart.style.display === 'block' ? 'none':'block'
   }
 
   Cart.prototype.clear = function() {
     this.itemCount = 0
-    this.totalPrice = '0.00'
+    this.totalPrice = 0
     var cartList = document.querySelector('.cart-list')
     while(cartList.hasChildNodes()) {
       cartList.removeChild(cartList.lastChild)
     }
-    document.querySelector('#total-price').innerHTML = '$' + this.totalPrice
+    document.querySelector('#total-price').innerHTML = '$' + this.totalPrice.toFixed(2)
   }
 
   var cart = new Cart()

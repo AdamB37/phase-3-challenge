@@ -114,7 +114,7 @@ body {
   flex: 0;
 }
 
-.maskoff {
+/*.modal {
   z-index: 1;
   display: none;
   border: 3px solid black;
@@ -123,4 +123,42 @@ body {
   position: fixed;
   margin-left: 30%;
   margin-top: 10%;
+}*/
+
+.modal {
+  z-index: 1;
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 100px;
+}
+
+.maskoff {
+  background-color: white;
+  border: 2px solid black;
+  margin: auto;
+  width: 35%;
+  height: 70%;
+  text-align: center;
+  /*padding-right: 5%;*/
+}
+
+.cart-list {
+  padding-right: 10%;
+}
+
+.cart-head {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 45%;
+}
+
+.close-cart {
+  color: white;
+  background-color: black;
+  font-size: 24px;
+  /*height: 5%;
+  width: 5%;*/
 }
